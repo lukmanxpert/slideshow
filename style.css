@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slideshow-container{
+    background-color: indianred;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+.slides{
+    position: relative;
+}
+.slide{
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .6s;
+}
+.slide > i, h2{
+    font-size: 8rem;
+    margin: 10px;
+}
+.current{
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform .6s;
+}
